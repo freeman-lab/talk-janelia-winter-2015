@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width">
+<link href="css/styles.css" rel="stylesheet" />
+<link href="fonts/06.Geomanist_Medium_webfontkit/stylesheet.css" rel="stylesheet"/>
+<link href="fonts/04.Geomanist_Regular_webfontkit/stylesheet.css" rel="stylesheet"/>
+<link href="fonts/03.Geomanist_Light_webfontkit/stylesheet.css" rel="stylesheet"/>
+<link href="fonts/source-serif-pro/source-serif-pro.css" rel="stylesheet"/>
+<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.9.1/styles/tomorrow-night.min.css">
+<script src="js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<section >
+  <br>
+  <br>
+  <h3 style='margin-top: 500px'>[ <a href="https://github.com/freeman-lab/talk-janelia-winter-2015" style='color: white; font-size: 42px'>github.com/freeman-lab/talk-janelia-winter-2015</a> ]</h3>
+</section>
+
+<section>
+  <h1 style='font-size: 100px'>let's talk about <emph>big</emph> data!</h1>
+</section>
+
+<section>
+  <h1 style='font-size: 100px'>let's talk about <emph>big</emph> data!</h1>
+  <h1 style='font-size: 68px'>actually we have <emph>medium</emph> data</h1>
+</section>
+
+<section>
+  <h1 style='font-size: 100px'>let's talk about <emph>big</emph> data!</h1>
+  <h1 style='font-size: 68px'>actually we have <emph>medium</emph> data</h1>
+  <h1 style='margin-top: 80px; font-size: 42px'>and sometimes it's <emph>small</emph> data</h1>
+</section>
+
+<section>
+  <h1 style='font-size: 100px'><br></h1>
+  <h1 style='font-size: 68px'><br></h1>
+  <h1 style='margin-top: 80px; font-size: 42px'>but we do have <emph>small</emph> data problems</h1>
+</section>
+
+<section>
+  <h1 style='font-size: 100px'><br></h1>
+  <h1 style='font-size: 68px'>and we have <emph>medium</emph> data problems</h1>
+  <h1 style='margin-top: 80px; font-size: 42px'>but we do have <emph>small</emph> data problems</h1>
+</section>
+
+<section>
+  <h1 style='font-size: 100px'>let's solve them!</h1>
+  <h1 style='font-size: 68px'>and we have <emph>medium</emph> data problems</h1>
+  <h1 style='margin-top: 80px; font-size: 42px'>but we do have <emph>small</emph> data problems</h1>
+</section>
+
+<section>
+  <h1><span class='tag'>#</span>1</h1>
+  <br>
+  <br>
+  <h1>wrangling ndarrays</h1>
+</section>
+
+<section>
+  <h1>small data</h1>
+  <br>
+  <pre><code style='font-size: 32px;line-height: 1.2em' class="python">x - x.sum(0) # python</pre></code>
+<pre><code style='font-size: 32px;line-height: 1.2em' class="julia">x .- sum(x, 1) # julia</pre></code>
+<pre><code style='font-size: 32px;line-height: 1.2em' class="matlab">bsxfun(@minus, x, sum(axis, 1)) % matlab, UGH!</pre></code>
+</section>
+
+<section>
+  <h1>medium or big data</h1>
+  <br>
+  <pre><code style='font-size: 32px;line-height: 1.2em' class="python">=( # python</pre></code>
+<pre><code style='font-size: 32px;line-height: 1.2em' class="julia">=( # julia</pre></code>
+<pre><code style='font-size: 32px;line-height: 1.2em' class="matlab">=( % matlab</pre></code>
+</section>
+
+<section style='text-align: left'>  
+  <br>
+  <a class='tech-list large'>spark</a><a class='tech-list medium'>dask</a><a class='tech-list large'>hadoop</a><br><a class='tech-list medium'>pycuda</a><a class='tech-list small'>scikit-learn</a><a class='tech-list medium'>xray</a><br><a class='tech-list small'>numpy</a><a class='tech-list medium'>theano</a><a class='tech-list large'>mllib</a><a class='tech-list large'>ibis</a><br>
+</section>
+
+<section style='text-align: left'>  
+  <br>
+  <a class='tech-list large'>spark</a><a class='tech-list medium'>dask</a><a class='tech-list large'>hadoop</a><br><a class='tech-list medium'>pycuda</a><a class='tech-list small'>scikit-learn</a><a class='tech-list medium'>xray</a><br><a class='tech-list small'>numpy</a><a class='tech-list medium'>theano</a><a class='tech-list large'>mllib</a><a class='tech-list large'>ibis</a><br>
+  <a href='http://github.com/bolt-project/bolt' class='tech-list large bolt'>bolt</a><a href='http://github.com/bolt-project/bolt' class='tech-list small bolt'>bolt</a><a class='tech-list large thunder' href='http://github.com/thunder-project/thunder'>thunder</a><a href='http://github.com/thunder-project/thunder' class='tech-list small thunder'>thunder</a>
+</section>
+
+
+<section>
+  <h1><span class='tag'>#</span>2</h1>
+  <br>
+  <br>
+  <h1>working better together</h1>
+</section>
+  
+<section class='full'>
+  <iframe src='http://mybinder.org' frameborder='0'></iframe>
+</section>
+
+<section class='full'>
+  <iframe src='http://mybinder.org/feed' frameborder='0'></iframe>
+</section>
+
+<section class='full-image' style="background: white; background-size:cover; background:url('images/nick-binder.png') no-repeat center center fixed;">
+</section>
+
+<section>
+  <h1><span class='tag'>#</span>3</h1>
+  <br>
+  <br>
+  <h1>standards, standards, standards</h1>
+</section>
+
+<section class='full' style='background: rgb(235,235,245);'>
+  <iframe src='http://neurofinder.codeneuro.org' frameborder='0'></iframe>
+</section>
+
+<section class='full' style='background: rgb(235,235,245);'>
+  <iframe src='http://neurofinder.codeneuro.org/leaderboard' frameborder='0'></iframe>
+</section>
+
+<section>
+  <h1>FAQ</h1>
+</section>
+
+<section>
+  <h1><span class='tag'>#</span>do I need a cluster?</h1>
+</section>
+
+<section>
+  <h1><span class='tag'>#</span>do I need a cluster?</h1>
+  <h1 class='answer'>maybe, how<br>impatient are you?</h1>
+</section>
+
+<section>
+  <h1><span class='tag'>#</span>can't we just do it all in hardware?</h1>
+</section>
+
+<section>
+  <h1><span class='tag'>#</span>can't we just do it all in hardware?</h1>
+  <h1 class='answer'>for most things probably not yet</h1>
+</section>
+
+<section>
+  <h1><span class='tag'>#</span>does all this computational stuff really matter?</h1>
+</section>
+
+<section>
+  <div style='margin-top:50px' id="movie-container">
+      <div id="full-screen-video-left">
+          <video id="mouse-movie" autoplay loop src="mov/Movie_2.mp4" width="590px"></video>
+      </div>
+      <div id="full-screen-video-right">
+          <video id="mouse-movie" autoplay loop src="mov/responses-trimmed.mp4" width="440px"></video>
+      </div>
+      <p class='author'>Nicholas Sofroniew + Karel Svoboda</p>
+  </div>
+</section>
+
+<section>
+  <h1>all the links</h1>
+  <h3 class='link-list'>[<a class='link-list-link' href="http://thunder-project.org">thunder-project.org</a>]</h3>
+  <h3 class='link-list'>[<a class='link-list-link' href="http://bolt-project.org">bolt-project.org</a>]</h3>
+  <h3 class='link-list'>[<a class='link-list-link' href="http://mybinder.org">mybinder.org</a>]</h3>
+  <h3 class='link-list'>[<a class='link-list-link' href="https://neurofinder.codeneuro.org">neurofinder.codeneuro.org</a>]</h3>
+</section>
+
+<section>
+<h1 class='title'>THANKS!</h1>
+</section>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/d3.v3.min.js"></script>
+<script src="js/stack.v1.js"></script>
+<script>
+
+var mystack = stack()
+    .on("activate", activate)
+    .on("deactivate", deactivate);
+
+var section = d3.selectAll("section"),
+    follow = d3.select("#follow"),
+    followAnchor = d3.select("#follow-anchor"),
+    lorenz = d3.select("#lorenz"),
+    followIndex = section[0].indexOf(follow.node()),
+    lorenzIndex = section[0].indexOf(lorenz.node());
+
+function refollow() {
+  followAnchor.style("top", (followIndex + (1 - mystack.scrollRatio()) / 2 - d3.event.offset) * 100 + "%");
+}
+
+function activate(d, i) {
+  var track = $('.indicator').children()
+  track.css('height','15px')
+  track.css('width','15px')
+  track.css('border-radius','10px')
+  track.css('background','none')
+  track.css('background-color','rgb(255,255,255)')
+  track.css('opacity', '0.5')
+  track.css('margin-left', '5px')
+  if (i === followIndex) mystack.on("scroll.follow", refollow);
+  if (i === lorenzIndex) startLorenz();
+}
+
+function deactivate(d, i) {
+  if (i === followIndex) mystack.on("scroll.follow", null);
+  if (i === lorenzIndex) stopLorenz();
+}
+
+var lorenzInterval;
+
+function startLorenz() {
+  var δτ = 0.003,
+      ρ = 28,
+      σ = 10,
+      β = 8 / 3,
+      x = .5,
+      y = .5,
+      z = 10,
+      n = 30;
+
+  var width = 1280,
+      height = 720;
+
+  var canvas = d3.select("canvas")
+      .style("position", "absolute")
+      .style("top", 0)
+      .style("left", 0)
+      .style("width", "100%")
+      .style("height", "100%")
+      .attr("width", width)
+      .attr("height", height);
+
+  var color = d3.scale.linear()
+      .domain([0, 20, 30, 50])
+      .range(["yellow", "orange", "brown", "purple"])
+      .interpolate(d3.interpolateHcl);
+
+  var context = canvas.node().getContext("2d");
+
+  context.lineWidth = .2;
+  context.fillStyle = "rgba(0,0,0,.03)";
+
+  d3.timer(function() {
+    context.save();
+    context.globalCompositeOperation = "lighter";
+    context.translate(width / 2, height / 2);
+    context.scale(12, 14);
+    context.rotate(30);
+    for (var i = 0; i < n; ++i) {
+      context.strokeStyle = color(z);
+      context.beginPath();
+      context.moveTo(x, y);
+      x += δτ * σ * (y - x);
+      y += δτ * (x * (ρ - z) - y);
+      z += δτ * (x * y - β * z);
+      context.lineTo(x, y);
+      context.stroke();
+    }
+    context.restore();
+    return !lorenzInterval;
+  });
+
+  lorenzInterval = setInterval(function() {
+    context.fillRect(0, 0, width, height);
+  }, 100);
+}
+
+function stopLorenz() {
+  lorenzInterval = clearInterval(lorenzInterval);
+}
+
+</script>

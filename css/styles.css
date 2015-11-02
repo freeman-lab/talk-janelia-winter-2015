@@ -1,0 +1,205 @@
+@import url(https://fonts.googleapis.com/css?family=Merriweather:400,400italic,700,700italic,300italic,300);
+
+@font-face {
+  font-family: "CooperHewitt-Bold";
+  src: url("../fonts/CooperHewitt-Bold.woff") format("woff"), url("fonts/CooperHewitt-Bold.eot") format("eot"); }
+
+@font-face {
+  font-family: "CooperHewitt-BoldItalic";
+  src: url("../fonts/CooperHewitt-BoldItalic.woff") format("woff"), url("fonts/CooperHewitt-BoldItalic.eot") format("eot"); }
+
+@font-face {
+  font-family: "CooperHewitt-Medium";
+  src: url("../fonts/CooperHewitt-Medium.woff") format("woff"), url("fonts/CooperHewitt-Medium.eot") format("eot"); }
+
+@font-face {
+  font-family: "CooperHewitt-MediumItalic";
+  src: url("../fonts/CooperHewitt-MediumItalic.woff") format("woff"), url("fonts/CooperHewitt-MediumItalic.eot") format("eot"); }
+
+@font-face {
+  font-family: "CooperHewitt-Light";
+  src: url("../fonts/CooperHewitt-Light.woff") format("woff"), url("fonts/CooperHewitt-Light.eot") format("eot"); }
+
+@font-face {
+  font-family: "CooperHewitt-LightItalic";
+  src: url("../fonts/CooperHewitt-LightItalic.woff") format("woff"), url("fonts/CooperHewitt-LightItalic.eot") format("eot"); }
+
+@font-face {
+  font-family: "CooperHewitt-Book";
+  src: url("../fonts/CooperHewitt-Book.woff") format("woff"), url("fonts/CooperHewitt-Book.eot") format("eot"); }
+
+body {
+  background: white;
+}
+
+section {
+  background: rgb(50,50,50);
+  text-align: left;
+  color: #fff;
+  padding-left: 10%;
+  padding-right: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+
+.full {
+  background: rgb(255,255,255);
+  padding: 0;
+  padding-top:2em;
+}
+
+.full-image {
+  padding-top:5em;
+}
+
+h1 {
+  font-family: 'CooperHewitt-Medium';
+  font-size: 110px;
+  line-height: 1.2em;
+  margin-bottom: 5px;
+}
+
+h2 {
+  font-family: 'CooperHewitt-Light';
+  font-size: 60px;
+  font-weight: 300;
+  line-height: 1.2em;
+}
+
+h3 {
+  font-family: 'Source Serif Pro';
+  font-size: 50px;
+  font-weight: 300;
+  line-height: 1.1em;
+  margin-bottom: 20px;
+  margin-top: 35px;
+}
+
+
+#follow {
+  background: none;
+}
+
+emph {
+  color: rgb(100, 200, 112);
+  font-family: 'CooperHewitt-MediumItalic';
+}
+
+.title {
+  font-size: 140px;
+}
+
+.tag {
+  color: rgb(200,100,100);
+  padding-right: 30px;
+}
+
+.answer {
+  font-family: 'CooperHewitt-Medium';
+  color: rgb(200,180,100);
+  margin-top: 40px;
+}
+
+.indicator {
+  display: none;
+}
+
+.grey {
+  color: #777;
+}
+
+iframe {
+  width:100%;
+  height:100%;
+  frameborder:0;
+}
+
+a {
+  font-family: 'CooperHewitt-Light';
+  transition: color 0.25s;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  border-bottom: dotted 2px rgb(180,180,180);
+}
+
+.link-list {
+  font-family: 'CooperHewitt-Light';
+}
+
+.link-list-link {
+  font-family: 'CooperHewitt-Light';
+  color: white;
+}
+
+.tech-list {
+  font-family: 'CooperHewitt-MediumItalic';
+  font-size: 92px;
+  margin-top: 50px;
+  line-height: 1.6em;
+  margin-right: 80px;
+}
+
+.small {
+  font-size: 40px;
+}
+
+.medium {
+  font-size: 80px;
+}
+
+.large {
+  font-size: 110px;
+}
+
+.thunder {
+  color: rgb(235,139,52);
+}
+
+.bolt {
+  color: rgb(173, 203, 55);
+}
+
+.author {
+  font-family: 'Source Serif Pro';
+  font-weight: 300;
+  text-align: right;
+  font-size: 42px;
+  position: absolute;
+  bottom: 0px;
+  margin-bottom: 110px;
+  right: 80px;
+  opacity: 0.7;
+}
+
+#full-screen-video-left {
+    float: left;
+    width: 600px;
+    margin-top: 0px;
+    margin-left: 0px;
+}
+
+#full-screen-video-right {
+    width: 500px;
+    margin-left: 650px;
+    margin-top: 0px;
+}
+
+pre {
+    font-size: 30px;
+    line-height: 40px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    text-align: left;
+}
+
+pre code {
+    border-radius: 12px;
+    background: none;
+    padding: none;
+}
