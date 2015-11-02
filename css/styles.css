@@ -130,11 +130,14 @@ a:hover {
 
 .link-list {
   font-family: 'CooperHewitt-Light';
+  line-height: 0.8em;
 }
 
 .link-list-link {
   font-family: 'CooperHewitt-Light';
-  color: white;
+  color: rgb(200,200,200);
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .tech-list {
